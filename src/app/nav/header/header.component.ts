@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    // vscode bug
+    // tslint:disable-next-line: deprecation
     this.breakpointObserver.observe('(max-width: 599px)').subscribe((result) => {
       this.isSmallScreen = result.matches;
     });
