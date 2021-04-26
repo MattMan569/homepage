@@ -1,0 +1,35 @@
+<mat-toolbar>
+  <div *ngIf="isSmallScreen">
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a
+      routerLink="/"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+  </div>
+  <div id="large-nav" role="navigation" *ngIf="!isSmallScreen">
+    <a
+      routerLink="/about"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >About</a
+    >
+    <a
+      routerLink="/examples"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Examples</a
+    >
+    <a
+      routerLink="/resume"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Resume</a
+    >
+  </div>
+</mat-toolbar>

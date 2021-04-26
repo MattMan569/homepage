@@ -1,0 +1,37 @@
+<mat-list>
+  <button mat-icon-button (click)="onCloseSidenav()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <a
+    mat-list-item
+    routerLink="/"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    (click)="onCloseSidenav()"
+    ><mat-icon>home</mat-icon><span>Home</span></a
+  >
+  <a
+    mat-list-item
+    routerLink="/about"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    (click)="onCloseSidenav()"
+    ><mat-icon>help_outline</mat-icon><span>About</span></a
+  >
+  <a
+    mat-list-item
+    routerLink="/examples"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    (click)="onCloseSidenav()"
+    ><mat-icon>web</mat-icon><span>Examples</span></a
+  >
+  <a
+    mat-list-item
+    routerLink="/resume"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    (click)="onCloseSidenav()"
+    ><mat-icon>description</mat-icon><span>Resume</span></a
+  >
+</mat-list>
