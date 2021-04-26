@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularMaterialModule } from './angular-material.module';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
+import { HeaderComponent } from './nav/header/header.component';
+import { SidenavListComponent } from './nav/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
