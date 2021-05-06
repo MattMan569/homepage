@@ -14,6 +14,6 @@ import { ExamplesComponent } from './examples.component';
     CommonModule,
     ExamplesRoutingModule,
     AngularMaterialModule,
-  ]
+  ],
 })
 export class ExamplesModule { }

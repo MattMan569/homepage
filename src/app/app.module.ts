@@ -24,6 +24,6 @@ import { SidenavListComponent } from './nav/sidenav-list/sidenav-list.component'
     AngularMaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

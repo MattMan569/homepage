@@ -6,6 +6,6 @@ const routes: Routes = [{ path: '', component: ResumeComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class ResumeRoutingModule { }

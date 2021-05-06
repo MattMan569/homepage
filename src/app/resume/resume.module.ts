@@ -7,11 +7,11 @@ import { ResumeComponent } from './resume.component';
 
 @NgModule({
   declarations: [
-    ResumeComponent
+    ResumeComponent,
   ],
   imports: [
     CommonModule,
-    ResumeRoutingModule
-  ]
+    ResumeRoutingModule,
+  ],
 })
 export class ResumeModule { }
