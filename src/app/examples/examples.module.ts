@@ -2,16 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExamplesRoutingModule } from './examples-routing.module';
-import { ExamplesComponent } from './examples.component';
+import { AngularMaterialModule } from './../angular-material.module';
 
+import { ExamplesComponent } from './examples.component';
 
 @NgModule({
   declarations: [
-    ExamplesComponent
+    ExamplesComponent,
   ],
   imports: [
     CommonModule,
-    ExamplesRoutingModule
+    ExamplesRoutingModule,
+    AngularMaterialModule,
   ]
 })
 export class ExamplesModule { }
