@@ -1,22 +1,25 @@
-<mat-card>
+<mat-card *ngFor="let website of websites">
   <mat-card-header>
-    <mat-card-title>ngChat</mat-card-title>
-    <mat-card-subtitle>Full stack chat app</mat-card-subtitle>
+    <mat-card-title>{{ website.title }}</mat-card-title>
+    <mat-card-subtitle>{{ website.subtitle }}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="#" alt="ngChat screenshot" />
-  <mat-card-content>
-    <p>description ...</p>
-  </mat-card-content>
+  <img
+    mat-card-image
+    src="{{ website.screenshotLink }}"
+    alt="{{ website.title }} screenshot"
+  />
   <mat-card-actions>
-    <a mat-flat-button color="accent" href="#" target="_blank">
-      <img
-        src="assets/github/GitHub-Mark-Light-32px.png"
-        alt="github logo"
-        class="github-button"
-      />
+    <a
+      mat-flat-button
+      color="accent"
+      class="github-button"
+      href="{{ website.githubLink }}"
+      target="_blank"
+    >
+      <img src="assets/github/GitHub-Mark-Light-32px.png" alt="github logo" />
       <span>Github</span>
     </a>
-    <a mat-flat-button color="accent" href="#" target="_blank">
+    <a mat-flat-button color="accent" href="{{ website.link }}" target="_blank">
       <mat-icon>link</mat-icon>
       <span>Link</span>
     </a>

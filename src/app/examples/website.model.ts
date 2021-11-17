@@ -3,8 +3,6 @@ export interface Website {
   title: string;
   /** Brief description */
   subtitle: string;
-  /** In-depth description */
-  description: string;
   /** Link to github repository */
   githubLink: string;
   /** Link to live address of the site */
